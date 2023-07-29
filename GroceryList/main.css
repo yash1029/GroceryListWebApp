@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 10em;
+    background-color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.grocery-section{  
+    margin: auto;
+    max-width:30em;
+    background-color: white;
+    padding:2em;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px -4px black;
+}
+
+.error-message{
+    height: 1.5rem;
+    border-radius: 5px;
+    background-color: rgba(144, 238, 144, 0.615);
+    box-sizing: content-box;
+    padding:0.2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.error-red{
+    background-color: rgba(255, 99, 71, 0.262);
+
+}
+.grocery-div{
+    display: flex;
+    margin:1em 0;
+}
+
+
+.grocery-form input{ 
+    min-width: 80%;
+    border: 0;
+    background-color: rgba(162, 181, 215, 0.249);
+   padding:0.5rem;
+   padding-left: 1rem;
+   border-radius: 10px 0 0 10px;
+   font-size: 1.2rem;
+   color: rgb(107, 107, 107);
+}
+
+.g-submit{
+    min-width: 20%;
+    border: 0;
+    background-color: rgba(53, 163, 206, 0.482);
+    border-radius: 0 10px 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.g-submit:hover{
+
+    color:white;
+    background-color: rgba(53, 163, 206, 0.76);
+}
+
+h1,input,.g-submit{
+    letter-spacing: 2px;
+   }
+ul{
+    list-style-type: none;  
+    text-align: left;
+    margin-bottom: 1.5em;
+}
+
+ul li{
+    padding:0.3em 0.6em;
+    display: flex;
+    justify-content: space-between;
+    
+    border-radius: 10px;
+    font-size: 1rem;
+    color: rgb(42, 42, 42);
+    margin:0.5em 0;
+    transition: all ease 0.5s;
+}
+
+ul li:hover{
+    background-color: rgba(162, 181, 215, 0.249);
+}
+
+.tools i{
+  margin: 0 0.2em;
+  font-size: 1rem;
+}
+
+.tools i:hover{
+    color:  rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.clear-btn{
+    border: 0;
+    color:red;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    background: none;
+}
+
+.clear-btn:hover{
+    color:black;
+    cursor: pointer;
+}
+
+
+@media  screen and (max-width: 375px) {
+
+    .grocery-section{
+        padding: 16px;
+    }
+    .grocery-form .g-input{
+        font-size: 1rem;
+        padding: 4px 4px 4px 8px;
+    }
+    .g-submit{
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+}
